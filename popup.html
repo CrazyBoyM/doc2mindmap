@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mindmap Generator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 10px;
+    }
+    button {
+      padding: 10px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Mindmap Generator</h1>
+  <p>Right-click on a page and select "Generate Mindmap" to create a mindmap of the page's content.</p>
+  <button id="generateMindmap">Generate Mindmap</button>
+  <script>
+    document.getElementById('generateMindmap').addEventListener('click', () => {
+      chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
+        chrome.scripting.executeScript({
+          target: { tabId: tabs[0].id },
+          files: ['content.js']
+        });
+      });
+    });
+  </script>
+</body>
+</html>
