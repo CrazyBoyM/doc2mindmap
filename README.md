@@ -6,7 +6,8 @@
 下载代码，在chrome、edge浏览器中打开设置-扩展程序，加载已解压的文件夹。
 
 ## 使用方法
-这是一个浏览器插件用于生成思维导图，请打开content.js代码将其中的apiurl和apikey换成你通过vllm部署自己模型的后端url或者任意openai格式的模型后端。默认使用的是作者自己的deepseek云端apikey，仅供演示不稳定，请替换成自己的apikey。
+这是一个浏览器插件用于生成思维导图，请打开content.js代码将其中的apiurl和apikey换成你通过vllm部署自己模型的后端url或者任意openai格式的模型后端。默认使用的是作者自己的deepseek云端apikey，仅供演示不稳定，请替换成自己的apikey。  
+tip：deepseek是一个大模型超便宜但是很智能的API平台，作为云端模型充值几块钱够用很久了，接口注册地址：https://platform.deepseek.com 
 
 ## 效果展示
 ![alt text](assets/3014ef6c26c03498fc46c5439b97309d.png)
