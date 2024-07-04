@@ -7,7 +7,7 @@ function extractArticleContent() {
 }
 
 function callLLM(content) {
-  const apiKey = 'sk-xxx';  // Replace with your actual API key
+  const apiKey = 'sk-be352978f74743df9ee7ddd441b57633';  // 临时key，请去deepseek网站注册后换成自己的
   const apiUrl = 'https://api.deepseek.com/chat/completions';
 
   fetch(apiUrl, {
